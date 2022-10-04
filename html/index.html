@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="css" href="../css/index.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body class="bg-dark text-bg-dark">
+  <div class="container-fluid">
+    <div class="container-sm">
+      <div class="align-content-center text-center mt-4 mb-2">
+        <h1 class="display-5">Project: Pietro Chiartano</h1>
+      </div>
+      <div class="d-flex flex-row mt-5 justify-content-center">
+        <div class="card m-auto" style="width: 18rem; background: #495057; border-color:495057">
+          <img src="../img/github.png" class="card-img-top mt-4 ps-3 pe-3" alt="GitHub" />
+          <div class="card-body justify-content-center d-flex flex-column">
+            <h4 class="card-title">GitHub</h4>
+            <p class="card-text">Here is my github page</p>
+            <a href="https://github.com/pabalaba" target="_blank" class="btn btn-primary">Visit the repo</a>
+          </div>
+        </div>
+        <div class="card m-auto" style="width: 18rem; background: #495057; border-color:495057">
+          <img src="../img/linkedin.png" class="card-img-top mt-4 ps-3 pe-3" alt="LinkedIn"/>
+          <div class="card-body justify-content-center d-flex flex-column">
+            <h4 class="card-title">LinkedIn</h4>
+            <p class="card-text">This is my LinkedIn page</p>
+            <a href="https://www.linkedin.com/in/pietro-chiartano/" target="_blank" class="btn btn-primary">Visit my profile</a>
+          </div>
+        </div>
+        <div class="card m-auto" style="width: 18rem; background: #495057; border-color:495057">
+          <img src="../img/discord.png" class="card-img-top mt-4 ps-3 pe-3" alt="GitHub" />
+          <div class="card-body justify-content-center d-flex flex-column">
+            <h4 class="card-title">Discord</h4>
+            <p class="card-text">I have an orangotangus pic</p>
+            <button onclick="copyToClip()" id="b" class="btn btn-primary">pabalaba#9335</button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column mt-5 justify-content-center mb-lg-5">
+        <div class="m-auto">
+          <h1 class="text-white fs-4 mt-4 ps-lg-5 pe-lg-5">{ * } Documentation</h1>
+          <p class="text-white fs-5 ps-lg-5 pe-lg-5">
+            Hi, I'm Pietro.<br>
+            I am currently studing to become a Cloud Specialist.<br>
+            In my free time I enjoy spending time with friends and learning new things.<br>
+            My favourite game is Minecraft.
+          </p>
+          <h1 class="text-white fs-4 mt-4 ps-lg-5 pe-lg-5">{ + } Updates</h1>
+          <p class="text-white fs-5 ps-lg-5 pe-lg-5">
+            Frontend: I started learning NextJS<br>
+            Backend: I'm currently learning GOlang<br>
+            I am in the midst of learning serverless architecture, docker, kubernetes and linux.
+          </p>
+          <h1 class="text-white fs-4 mt-4 ps-lg-5 pe-lg-5">{ - } Changelog</h1>
+          <p class="text-white fs-5 ps-lg-5 pe-lg-5">
+            I believe Linux is not that bad.<br>
+            Starting to appreciate the Fronted.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  <script type="text/javascript">
+    function copyToClip() {
+      var copy = "pabalaba#9335";
+      navigator.clipboard.writeText(copy);
+      console.log(copy);
+      var btn = document.getElementById("b");
+      btn.style.backgroundColor  = "#32cd32";
+      btn.style.border  = "#32cd32";
+      btn.style.color = "black";
+      btn.innerHTML = "Copied to clipboard";
+      setTimeout(function(){
+        btn.removeAttribute("style");
+        btn.innerHTML = copy;
+      },3000);
+    }
+  </script>
+</body>
+</html>
